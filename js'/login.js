@@ -7,5 +7,11 @@ document.getElementById('btn-login').addEventListener('click', function(){
     // step 3: get password
     const passwordField = document.getElementById('user-password');
     const pass = passwordField.value;
-    console.log(email, pass)
+    // step 4: verify email and password
+    if(email === 'shuvo@gmail.com' && pass === 'shuvo'){
+        window.location.href = 'bank.html'
+    }
+    else{
+        alert('please input your valid password')
+    }
 })
